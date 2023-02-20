@@ -19,19 +19,11 @@
 #   var: ${{github.vARIABLE-NAME}}
 
 
-name: Print Node.js Version
-
+name: Hello World
 on: [push]
-
 jobs:
-  print-version:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-    - name: Print Node.js version
-      run: node -v
+      - name: Say Hello
+        run: echo "Hello, World!"
