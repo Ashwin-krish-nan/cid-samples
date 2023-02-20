@@ -1,29 +1,6 @@
-# title: portfolio
-# desc: portofolio of ashwin
-# age: 25
-
-# #array
-# nav:
-# - tech
-# - img
-# - creative
-
-# #obj
-# address:
-#   street: vroad
-#   city: ch
-#   state: TN
-
-#   #env
-#   value: ${{env.VALUE}}
-#   var: ${{github.vARIABLE-NAME}}
-
 
 name: Hello World
-on:
-  push:
-    branches:
-      - main
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
